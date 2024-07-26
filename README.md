@@ -1,7 +1,21 @@
 # Система транзакций
 Стек - sqlalchemy, fastapi, postgresql, alembic, Docker, docker-compose
+
+Swagger: http://localhost:8000/docs/
 ## Начальная инициализация
-Скопируйте проект с помощью команды `git clone https://github.com/BrikozO/TransactionSystem.git`
+1. Скопируйте проект с помощью команды `git clone https://github.com/BrikozO/TransactionSystem.git`
+
+Учетные данные пользователей для теста: <br>
+###### Администратор
+```
+email: testemail1@mail.ru
+password: test12345
+```
+###### Пользователь
+```
+email: testemail2@mail.ru
+password: 12345test
+```
 ### Инициализация через docker-compose
 1. В корневой директории проекта создайте файл ".env.docker" со следующим содержимым:
 ```
