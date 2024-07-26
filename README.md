@@ -19,8 +19,7 @@ POSTGRES_DB=transactionsystem
 4. Проинициализируйте миграции с помощью `docker compose -f docker-compose.yml exec web alembic upgrade head`
 ### Инициализация без docker compose
 1. Выполните команду `pip install -r requirements.txt`
-2. Проинициализируйте миграции с помощью `alembic upgrade head`
-3. В корневой директории проекта создайте файл ".env" со следующим содержимым:
+2. В корневой директории проекта создайте файл ".env" со следующим содержимым:
 ```
 SECRET_KEY=64b77cab0a24e98ede0a1a4ee7663cf3695bea338bf641f51d239a88c392def9
 HASH_ALG=HS256
@@ -32,4 +31,5 @@ POSTGRES_HOST=localhost
 POSTGRES_PORT=5432
 POSTGRES_DB=transactionsystem
 ```
+3. Проинициализируйте миграции с помощью `alembic upgrade head`
 4. Запустите веб-сервер через консоль с помощью `uvicorn app.main:app --reload`
